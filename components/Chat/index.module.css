@@ -1,0 +1,90 @@
+
+.chat-trigger {
+  padding: 1.5 rem;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-container {
+  width: 400px;
+  height: 600px;
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+  position: relative;
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 30px;
+  bottom: 30px;
+
+  background-color: rgb(38, 36, 36);
+}
+
+.chat-close {
+  position: absolute;
+  padding: 2px;
+  top: 7px;
+  right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.5rem;
+  gap: 0.5rem;
+}
+
+.chat-title {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+
+.chat-message {
+  font-size: 1rem;
+  max-width: 70%;
+  width: fit-content;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.chat-message-user {
+  background-color: rgb(68, 67, 67);
+  align-self: flex-end;
+}
+
+.chat-message-ai {
+  background-color: blue;
+}
+
+.chat-form {
+  display: flex;
+  height: 60px;
+  padding: 0.5rem;
+  gap: 0.25rem;
+}
+
+.chat-form textarea {
+  flex: 1;
+  font-size: 1rem;
+  resize: none;
+  padding: 0.25rem;
+}
+
+.chat-form button {
+  padding: 0.5rem;
+}
